@@ -1,5 +1,5 @@
 # **drone-allure-server-plugin**
-- Drone plugin to generate allure reports in allure server 
+- Drone plugin to generate allure reports in [Allure Server](https://github.com/Igur007/allure-server)
 
 ## Inputs
 
