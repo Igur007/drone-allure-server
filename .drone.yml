@@ -1,0 +1,18 @@
+kind: pipeline
+name: test 3.10
+
+trigger:
+  ref:
+    include:
+    - refs/heads/main
+
+steps:
+  - name: allure-report
+    image: igur007/drone-allure-server-plugin:latest
+    environment:
+      ALLURE_SERVER_URL: http://10.110.213.220:8080
+      ALLURE_RESULTS: allure-results
+      REPORT_PATH: main
+      EXECUTOR_INFO_NAME: Drone
+      DELETE_RESULTS: "true"
+    secrets: [DRONE_BUILD_NUMBER, DRONE_BUILD_LINK]

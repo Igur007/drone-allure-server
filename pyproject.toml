@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "drone-allure-server-plugin"
+version = "0.1.0"
+description = "A custom plugin for generating Allure reports on Drone CI"
+authors = ["Your Name <igur007@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.26"
