@@ -3,7 +3,6 @@ import sys
 import zipfile
 from dataclasses import dataclass, asdict
 from pathlib import Path
-from pprint import pprint
 from typing import List
 
 import requests
